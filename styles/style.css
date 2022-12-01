@@ -1,5 +1,11 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+/*  기본 스타일 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* CSS 스타일 */
 body {
@@ -8,7 +14,6 @@ body {
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  font-weight: 900;
 }
 
 /* 레이아웃 */
@@ -18,7 +23,6 @@ body {
 .slogan,
 .footer-inner {
   width: 940px;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -40,6 +44,28 @@ header {
 .main {
   background: lightgreen;
   height: 50vh;
+  display: flow-root;
+  padding: 0 15px;
+}
+
+.group {
+  margin: 0 15px;
+  float: left;
+}
+
+.group1 {
+  background: violet;
+  width: 250px;
+}
+
+.group2 {
+  background: salmon;
+  width: 380px;
+}
+
+.group3 {
+  background: gold;
+  width: 190px;
 }
 
 /* 슬로건 */
@@ -52,6 +78,7 @@ header {
 .footer {
   background: gray;
 }
+
 .footer-inner {
   height: 15vh;
   background: silver;
