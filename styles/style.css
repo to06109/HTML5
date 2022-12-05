@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 /*  기본 스타일 */
 *,
 *::before,
@@ -28,11 +29,39 @@ body {
 
 /* 헤더 */
 header {
-  background: pink;
+  background: #fff;
   /* 상하 좌우 */
   padding: 0 30px;
   height: 15vh;
+  border-radius: 0 0 15px 15px;
 }
+
+.member {
+  background-color: pink;
+  display: flex;
+  /* 메인축: 행 */
+  flex-flow: row nowrap;
+  /* 행 정렬 */
+  justify-content: flex-end;
+}
+
+/* .member li:nth-child(n + 2)::before {
+  content: ':';
+} */
+
+/* .member li::before {
+  content: '\e800';
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+} */
 
 /* 비주얼 */
 .visual {
