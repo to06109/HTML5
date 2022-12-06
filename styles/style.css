@@ -3,10 +3,11 @@
 
 /* 숨김 콘텐츠 */
 .a11y-hidden {
-  background-color: yellow;
-  /* 띄움 */
   position: absolute;
-  top: -50px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /*  기본 스타일 */
@@ -53,7 +54,6 @@ header {
   background: #fff;
   /* 상하 좌우 */
   padding: 0 30px;
-  height: 15vh;
   /* left-top부터 시작, 시계방향 */
   border-radius: 0 0 15px 15px;
   position: relative;
