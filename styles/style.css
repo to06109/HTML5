@@ -32,7 +32,8 @@ body {
   /* em, rem 단위를 사용해보기 */
   font-size: 1.4rem;
   color: black;
-  background: #ccc;
+  background: #ccc
+    linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 70%, #fff 100%);
   font-family: 'Pretendard Variable', Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
@@ -100,6 +101,10 @@ header {
 }
 
 /* 메인 메뉴 */
+.navigation {
+  padding-bottom: 80px;
+}
+
 .menu {
   /* 그라디언트 */
   background: #e85e2c
@@ -154,7 +159,8 @@ header {
 
 /* 푸터 */
 .footer {
-  background: gray;
+  background: #ccc
+    linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 70%, #fff 100%);
 }
 
 .footer-inner {
