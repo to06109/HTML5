@@ -53,7 +53,7 @@ header {
 
 /* 텍스트 링크 모음 */
 .member {
-  /* background-color: aqua; */
+  background-color: aqua;
   text-align: right;
   padding: 4px 0;
 }
@@ -68,6 +68,12 @@ header {
   padding: 6px 10px;
   /* a도 inline-block 하기 */
   display: inherit;
+  text-transform: uppercase;
+}
+
+/* 마지막 li 요소에 포함된 a 요소를 선택하여 오른쪽 padding값을 0으로 재정의 */
+.member li:last-child a {
+  padding-right: 0;
 }
 
 .divider {
