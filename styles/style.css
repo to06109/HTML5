@@ -215,9 +215,26 @@ header {
 }
 
 /* 비주얼 */
+
+/* 애니메이션 선언 */
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
 .visual {
-  background: orange;
-  height: 10vh;
+  background: pink;
+  height: 120px;
+}
+
+.visual-text {
+  background-color: orange;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
 }
 
 /* 메인 */
