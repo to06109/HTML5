@@ -124,8 +124,12 @@ header {
   height: 47px;
 }
 
-.menu-item {
+.menu li {
   float: left;
+}
+
+.menu-item {
+  /* float: left; */
   border-left: 2px solid #fff;
 }
 
@@ -158,6 +162,11 @@ header {
   background-color: pink;
   position: absolute;
   display: none;
+}
+
+.is-active .sub-menu {
+  /* none이었던걸 보여주기 */
+  display: block;
 }
 
 /* 비주얼 */
