@@ -73,10 +73,6 @@ header {
 
   text-align: right;
   padding: 4px 0;
-  /* position 속성을 이용해 .member 영역을 오른쪽으로 10px만큼 이동하기 */
-  /* normal flow 기준으로 배치 */
-  /* position: relative;
-  right: -10px; */
   /* transform 속성을 이용해 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
   transform: translateX(10px);
 }
@@ -124,12 +120,9 @@ header {
   height: 47px;
 }
 
-.menu li {
-  float: left;
-}
-
 .menu-item {
-  /* float: left; */
+  position: relative;
+  float: left;
   border-left: 2px solid #fff;
 }
 
@@ -161,12 +154,18 @@ header {
 .sub-menu {
   background-color: pink;
   position: absolute;
+  left: 0;
+  top: 47px;
   display: none;
 }
 
 .is-active .sub-menu {
   /* none이었던걸 보여주기 */
   display: block;
+}
+
+.sub-menu li {
+  display: inline-block;
 }
 
 /* 비주얼 */
