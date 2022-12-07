@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden {
@@ -65,13 +66,11 @@ header {
   position: absolute;
   top: 45px;
   left: 60px;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* 텍스트 링크 모음 */
 .member {
-  background: aqua;
-
   text-align: right;
   padding: 4px 0;
   /* transform 속성을 이용해 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
@@ -90,18 +89,13 @@ header {
   text-transform: uppercase;
 }
 
-/* 마지막 li 요소에 포함된 a 요소를 선택하여 오른쪽 padding값을 0으로 재정의 */
-/* .member li:last-child a {
-  padding-right: 0;
-} */
-
 .divider {
   margin-right: 4px;
 }
 
 /* 메인 메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .menu {
@@ -158,11 +152,11 @@ header {
 }
 
 .sub-menu {
-  background-color: pink;
   position: absolute;
   /* left: 0; */
   top: 47px;
   display: none;
+  padding: 4px 0;
 }
 
 .menu-html,
@@ -185,6 +179,38 @@ header {
 
 .sub-menu li {
   display: inline-block;
+}
+
+.sub-menu a::before {
+  content: '\e805';
+  font-family: 'fontello';
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sub-menu a:hover::before,
+.sub-menu a:focus::before {
+  content: '\e801';
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+  color: #f00;
 }
 
 /* 비주얼 */
