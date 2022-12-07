@@ -156,6 +156,7 @@ header {
   /* left: 0; */
   top: 47px;
   display: none;
+  /* menu의 구분선이 겹치지 않게 */
   padding: 4px 0;
 }
 
