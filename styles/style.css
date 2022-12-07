@@ -69,6 +69,8 @@ header {
 
 /* 텍스트 링크 모음 */
 .member {
+  background: aqua;
+
   text-align: right;
   padding: 4px 0;
   /* position 속성을 이용해 .member 영역을 오른쪽으로 10px만큼 이동하기 */
@@ -127,6 +129,7 @@ header {
   border-left: 2px solid #fff;
 }
 
+/* 구체성 -> 10점 */
 .menu-button {
   border: 0;
   background: transparent;
@@ -137,6 +140,18 @@ header {
   color: #fff;
   /* 윤곽체 */
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+/* 구체성 -> 20점 */
+.is-active .menu-button {
+  color: yellow;
+}
+
+/* 구체성 -> 20점 */
+.is-active .menu-button::after {
+  content: '';
+  display: block;
+  border-top: 2px solid #000;
 }
 
 .sub-menu {
