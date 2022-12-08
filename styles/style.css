@@ -241,6 +241,7 @@ header {
   background-color: orange;
   animation-name: moveEffect;
   animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
   /* 애니메이션 끝난 상태로 유지 */
   animation-fill-mode: forwards;
   display: inline-block;
