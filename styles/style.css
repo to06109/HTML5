@@ -3,7 +3,8 @@
 @import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -247,7 +248,7 @@ header {
 .visual::before,
 .visual::after {
   content: '';
-  /* block 현태가 됨 */
+  /* block 형태가 됨 */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -276,10 +277,11 @@ header {
 
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
   display: flow-root;
-  padding: 0 15px;
+  background: #fff;
+  min-height: 450px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -288,7 +290,6 @@ header {
 }
 
 .group1 {
-  background: violet;
   width: 250px;
 }
 
@@ -300,6 +301,89 @@ header {
 .group3 {
   background: gold;
   width: 190px;
+}
+
+/* 로그인 */
+.login {
+  border-radius: 5px;
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  padding: 10px;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.login-title {
+  font-size: 15px;
+  color: yellow;
+  font-weight: 700;
+  /* 들여쓰기 */
+  text-indent: 10px;
+}
+
+.login-form {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+.sign a::before {
+  content: '\e804';
+  font-family: 'fontello';
+  margin-right: 8px;
+  color: orangered;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: orangered;
+  color: #fff;
+  height: 53px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 8px;
+  font-size: 13px;
+}
+
+.login-form fieldset {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+
+.user-email,
+.user-pw {
+  margin-bottom: 5px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
 }
 
 /* 슬로건 */
