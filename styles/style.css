@@ -294,7 +294,6 @@ header {
 }
 
 .group2 {
-  background: salmon;
   width: 380px;
 }
 
@@ -511,6 +510,73 @@ header {
   border-radius: 3px;
   padding: 0 10px;
   font-size: 1.2rem;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  border: 1px solid #aaa;
+  background: #ccc;
+  border-radius: 5px 5px 0 0;
+  color: #666;
+  padding: 5px 10px;
+}
+
+.is-select.tab {
+  background: #fff;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board-list a {
+  flex-grow: 1;
+  overflow: hidden;
+  /* 줄바꿈 금지 */
+  white-space: nowrap;
+  /* 잘린 부분을 말줄임표로 대체 */
+  text-overflow: ellipsis;
+  /* 클릭 영역 늘려줌 */
+}
+
+.board-list time {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
 }
 
 /* 슬로건 */
