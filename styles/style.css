@@ -410,6 +410,12 @@ header {
   color: red;
 }
 
+/* 웹 관련 용어 배너 */
+.term {
+  background: yellow
+;
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
