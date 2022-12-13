@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fontello.css);
+@import url(./module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -596,7 +597,6 @@ header {
 }
 
 .news-title {
-  color: #e85e2c;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -648,6 +648,8 @@ header {
   font-weight: 500;
   left: 20px;
 }
+
+/* 신규이벤트 및 관련사이트 */
 
 /* 슬로건 */
 .slogan {
