@@ -634,8 +634,10 @@ header {
 
 .news-item-thumbnail {
   position: absolute;
+  /* item-title 글자와 높이 맞추기 위함 */
   top: 2px;
   left: 0;
+  /* figcaption 가운데 정렬 */
   text-align: center;
 }
 
@@ -715,6 +717,7 @@ header {
 
 .related-list li {
   height: 25px;
+  /* a 수직정렬 */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
