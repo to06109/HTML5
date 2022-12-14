@@ -752,9 +752,6 @@ header {
   counter-increment: number;
   position: relative;
   background-color: aqua;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
 
 .favorite-list li::before {
@@ -782,15 +779,15 @@ header {
 .up,
 .stop,
 .down {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
+  /* display: inline-block; */
   width: 20px;
   height: 11px;
   margin-left: auto;
-  background: url(./images/rank.png) no-repeat 100% 0;
-  /* position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(50%); */
+  background: lime url(./images/rank.png) no-repeat 100% 0;
 }
 
 .stop {
