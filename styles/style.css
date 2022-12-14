@@ -111,10 +111,26 @@ header {
   margin-top: 20px;
 }
 
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.event-title {
+  background-color: pink;
+}
+
 .event-button-wrapper {
   background-color: yellow;
-  overflow: hidden;
-  padding: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+#eventDetail {
+  background-color: aquamarine;
 }
 
 .event-button {
