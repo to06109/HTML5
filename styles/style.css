@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 /* 링크 스타일 */
 a {
   color: inherit;
@@ -16,6 +20,7 @@ a {
 
 /* CSS 스타일 */
 body {
+  font-size: 1.4rem;
   background: #ffc;
   font-family: 'Pretendard Variable', Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
@@ -38,7 +43,6 @@ header {
   background: #fff;
   /* 상하 좌우 */
   padding: 0 30px;
-  height: 15vh;
   border-radius: 0 0 15px 15px;
 }
 
@@ -58,12 +62,12 @@ header {
 /* 비주얼 */
 .visual {
   background: orange;
-  height: 10vh;
+  height: 120px;
 }
 
 /* 메인 */
 .main {
-  background: lightgreen;
+  background: white;
   min-height: 450px;
   display: flex;
   flex-flow: row nowrap;
@@ -85,6 +89,55 @@ header {
 .group3 {
   background: gold;
   width: 190px;
+}
+
+/* 신규 이벤트 및 이벤트 */
+.gradient-effect {
+  border: 1px solid #aaa;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.accent-color {
+  color: #a52a52;
+}
+
+.margin-top-default {
+  margin-top: 20px;
+}
+
+.event-button-wrapper {
+  background-color: yellow;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.event-button {
+  border: 0;
+  height: 18px;
+  width: 19px;
+  padding: 0;
+  text-indent: -9999px;
+  background: aqua url('./images/back_forward.png') no-repeat;
+}
+
+.event-button-next {
+  background-position: 100% 0;
+}
+
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+
+.event-thumbnail img {
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 0 0 #ccc;
 }
 
 /* 슬로건 */
